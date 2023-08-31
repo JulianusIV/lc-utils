@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "lc-utils",
+	"version": "${version}",
+	"name": "lc-utils",
+	"description": "General utilities for the Lathcraft server",
+	"authors": [
+		"julianusiv"
+	],
+	"contact": {
+		"homepage": "https://julianusiv.de/",
+		"sources": "https://github.com/JulianusIV/Lc-Utils"
+	},
+	"license": "MIT",
+	"icon": "assets/lc-utils/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"julianusiv.lcutils.LcUtils"
+		]
+	},
+	"mixins": [
+		"lc-utils.mixins.json",
+		{
+			"config": "lc-utils.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
