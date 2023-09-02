@@ -2,8 +2,9 @@
 	"required": true,
 	"package": "julianusiv.lcutils.mixin",
 	"compatibilityLevel": "JAVA_17",
-	"mixins": [
-		"TradeOffersMixin"
+	"server": [
+		"TradeOffersMixin",
+		"EntityExplosionBehaviorMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

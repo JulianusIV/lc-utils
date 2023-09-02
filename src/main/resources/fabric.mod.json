@@ -20,11 +20,7 @@
 		]
 	},
 	"mixins": [
-		"lc-utils.mixins.json",
-		{
-			"config": "lc-utils.client.mixins.json",
-			"environment": "client"
-		}
+		"lc-utils.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.14.22",
