@@ -25,7 +25,7 @@ public class WanderingTraderEntityMixin extends MerchantEntity {
     @Shadow
     @Override
     public native PassiveEntity createChild(ServerWorld arg0, PassiveEntity arg1);
-    
+
     public WanderingTraderEntityMixin(EntityType<? extends MerchantEntity> entityType, World world) {
         super(entityType, world);
     }

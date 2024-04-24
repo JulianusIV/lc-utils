@@ -1,4 +1,4 @@
-# lc-utils
+# lcutils
 
 A general utility mod for the Lathland Community Minecraft Server
 

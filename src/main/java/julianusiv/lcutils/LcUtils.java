@@ -8,14 +8,15 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.entity.event.v1.ServerLivingEntityEvents;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import net.fabricmc.fabric.api.event.player.UseBlockCallback;
+import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
 
 public class LcUtils implements ModInitializer {
-    public static final Logger LOGGER = LoggerFactory.getLogger("lc-utils");
-	public static final SimpleConfig CONFIG = SimpleConfig.of("lc-utils").provider((filename) -> {
+    public static final Logger LOGGER = LoggerFactory.getLogger("lcutils");
+	public static final SimpleConfig CONFIG = SimpleConfig.of("lcutils").provider((filename) -> {
 		//default config
 		return """
 				spawnprotection=10
@@ -38,7 +39,7 @@ public class LcUtils implements ModInitializer {
 		});
 
 		UseBlockCallback.EVENT.register((player, world, hand, result) -> {
-			if (isSpawnArea(world.getSpawnPos(), result.getBlockPos()) && !player.isCreative())
+			if (isSpawnArea(world.getSpawnPos(), result.getBlockPos()) && !player.isCreative() && world.getBlockEntity(result.getBlockPos()).getType() != BlockEntityType.CHEST)
 				return ActionResult.FAIL;
 			return ActionResult.PASS;
 		});

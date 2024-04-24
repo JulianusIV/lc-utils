@@ -44,11 +44,11 @@ public class ItemFactory implements TradeOffers.Factory {
     @Override
     public TradeOffer create(Entity arg0, Random arg1) {
         return new TradeOffer(
-            new ItemStack(Items.EMERALD, this.price), 
-            new ItemStack(this.sell.getItem(), this.count), 
-            this.maxUses, 
-            this.experience, 
+            new ItemStack(Items.EMERALD, this.price),
+            new ItemStack(this.sell.getItem(), this.count),
+            this.maxUses,
+            this.experience,
             this.multiplier);
     }
-    
+
 }

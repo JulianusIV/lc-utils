@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "MNM",
+        "NSN",
+        "MNM"
+    ],
+    "key": {
+        "M": {
+            "item": "minecraft:phantom_membrane"
+        },
+        "N": {
+            "item": "minecraft:netherite_ingot"
+        },
+        "S": {
+            "item": "minecraft:nether_star"
+        }
+    },
+    "result": {
+        "item": "minecraft:elytra"
+    }
+}
