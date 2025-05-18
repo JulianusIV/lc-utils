@@ -9,7 +9,7 @@ A general utility mod for the Lathland Community Minecraft Server
 
 ## ToDo
 
-- Home commmand system
+- Home commmand system - similar to functionality of [Vanilla Tweaks datapack](https://vanillatweaks.net/picker/datapacks/)
  - `/sethome` command
  - `/home` command to teleport home, usable only every few minutes
  - `/back` command to teleport back to where you just came from (only works within some timeframe after `/home` was executed)
